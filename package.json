@@ -4,7 +4,9 @@
   "description": "API for ChainCAP Ventures project",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development nodemon",
+    "prod": "NODE_ENV=production ts-node index.ts"
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,7 @@
     "graphql": "^15.8.0",
     "graphql-import": "^1.0.2",
     "helmet": "^7.1.0",
-    "mongoose": "^8.1.1"
+    "mongoose": "^8.1.1",
+    "winston": "^3.11.0"
   }
 }
