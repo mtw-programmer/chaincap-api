@@ -2,6 +2,8 @@ import express from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
 
+import config from './utils/config';
+
 const app = express();
 
 app.use(express.json());
@@ -11,5 +13,5 @@ app.use(cors({
   credentials: true,
 }));
 
-const port = 4000;
+const port = config.APP_PORT || 4000;
 export default app.listen(port, () => console.log(`App listening on port ${port}`));
