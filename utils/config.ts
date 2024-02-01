@@ -11,7 +11,7 @@ try {
   const NODE_ENV = config.NODE_ENV;
   dotenv.config({ path: path.resolve(__dirname, `../config/${NODE_ENV}.env`) });
 
-  const properties = ['APP_PORT'];
+  const properties = ['APP_PORT', 'DB_HOST', 'DB_PORT', 'DB_NAME'];
 
   properties.forEach((property:string) => {
     if(!Object.prototype.hasOwnProperty.call(process.env, property))

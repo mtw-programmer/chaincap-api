@@ -1,6 +1,7 @@
 import express from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
+import './services/mongodb';
 
 import config from './utils/config';
 
