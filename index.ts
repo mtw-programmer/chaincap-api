@@ -4,6 +4,7 @@ import cors from 'cors';
 import './services/mongodb';
 
 import config from './utils/config';
+import log from './utils/log';
 
 const app = express();
 
@@ -15,4 +16,4 @@ app.use(cors({
 }));
 
 const port = config.APP_PORT || 4000;
-export default app.listen(port, () => console.log(`App listening on port ${port}`));
+export default app.listen(port, () => log.init({ label: 'Index', message: `App listening on port ${port}` }));
