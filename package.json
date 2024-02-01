@@ -1,0 +1,36 @@
+{
+  "name": "chaincap-api",
+  "version": "1.0.0",
+  "description": "API for ChainCAP Ventures project",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtw-programmer/chaincap-api.git"
+  },
+  "keywords": [
+    "api",
+    "graphql",
+    "web3",
+    "cryptocurrency",
+    "express"
+  ],
+  "author": "mtw-programmer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mtw-programmer/chaincap-api/issues"
+  },
+  "homepage": "https://github.com/mtw-programmer/chaincap-api#readme",
+  "dependencies": {
+    "apollo-server-express": "^3.13.0",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.8.0",
+    "graphql-import": "^1.0.2",
+    "helmet": "^7.1.0",
+    "mongoose": "^8.1.1"
+  }
+}
