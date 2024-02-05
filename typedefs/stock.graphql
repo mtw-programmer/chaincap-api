@@ -1,0 +1,12 @@
+type Stock {
+  img: String!
+  title: String!
+  buyPrice: Float!
+  sellPrice: Float!
+  priceDiff: Float!
+  favourite: Boolean!
+}
+
+type Query {
+  stocks: [Stock]
+}
