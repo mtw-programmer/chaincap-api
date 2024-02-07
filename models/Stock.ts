@@ -13,6 +13,21 @@ const schema = new mongoose.Schema<Stock>({
     minlength: 1,
     maxlength: 30,
     required: true
+  },
+  buyPrice: {
+    type: Number,
+    min: 0,
+    max: 999999999
+  },
+  sellPrice: {
+    type: Number,
+    min: 0,
+    max: 999999999
+  },
+  priceDiff: {
+    type: String,
+    minlength: 2,
+    maxlength: 6
   }
 });
 
