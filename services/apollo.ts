@@ -3,6 +3,7 @@ import { ApolloServerPluginDrainHttpServer } from '@apollo/server/plugin/drainHt
 import { importSchema } from 'graphql-import';
 
 import { httpServer } from './app';
+
 import Stock from '../models/Stock';
 import StockInterface from '../interfaces/Stock';
 
