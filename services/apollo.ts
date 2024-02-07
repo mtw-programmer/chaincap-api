@@ -3,21 +3,16 @@ import { ApolloServerPluginDrainHttpServer } from '@apollo/server/plugin/drainHt
 import { importSchema } from 'graphql-import';
 
 import { httpServer } from './app';
+import Stock from '../models/Stock';
+import StockInterface from '../interfaces/Stock';
 
-const stocks = [
-  {
-    img: 'test.png',
-    title: 'Oil',
-    buyPrice: 0.5378236,
-    sellPrice: 0.5378345,
-    priceDiff: -0.22,
-    favourite: false
-  },
-];
+const fetchStocks = async ():Promise<StockInterface[]> => {
+  return await Stock.find();
+};
 
 const resolvers = {
   Query: {
-    stocks: () => stocks,
+    stocks: () => fetchStocks(),
   },
 };
 
