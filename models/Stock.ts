@@ -24,6 +24,10 @@ const schema = new mongoose.Schema<Stock>({
     min: 0,
     max: 999999999
   },
+  __v: {
+    type: Number,
+    select: false
+  },
   priceDiff: {
     type: String,
     minlength: 2,

@@ -9,10 +9,14 @@ const schema = new mongoose.Schema<User>({
     unique: true,
     required: true
   },
+  __v: {
+    type: Number,
+    select: false
+  },
   favourites: {
     type: [mongoose.Types.ObjectId],
     ref: 'Stock'
-  }
+  },
 });
 
 export default mongoose.model<User>('User', schema);
